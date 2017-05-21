@@ -79,7 +79,10 @@ const ponTaskPm2 = require('pon-task-pm2')
 
 async function tryExample () {
   let run = pon({
-    myTask01: ponTaskPm2()
+    pm2: ponTaskPm2(),
+    start: 'pm2/start',
+    restart: 'pm2/restart',
+    stop: 'pm2/stop'
   })
 
   run('myTask01')
@@ -100,12 +103,13 @@ Signatures
 ---------
 
 
-### `define(options) -> function`
+### `define(filename, options) -> function`
 
 Define task
 
 | Param | type | Description |
 | ---- | --- | ----------- |
+| filename | string |  Script file path |
 | options | Object |  Optional settings |
 
 
