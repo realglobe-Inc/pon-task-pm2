@@ -1,0 +1,50 @@
+{
+  "name": "pon-task-pm2",
+  "version": "1.0.0",
+  "description": "Pon task to use pm2",
+  "main": "lib",
+  "browser": "shim/browser",
+  "scripts": {
+    "prepare": "node ./ci/build.js && node ./ci/shim.js ",
+    "test": "node ./ci/test.js"
+  },
+  "repository": "realglobe-Inc/pon-task-pm2",
+  "keywords": [
+    "Pon"
+  ],
+  "author": {
+    "name": "Taka Okunishi",
+    "email": "okunishinishi@gmail.com",
+    "url": "http://okunishitaka.com"
+  },
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/realglobe-Inc/pon-task-pm2/issues"
+  },
+  "homepage": "https://github.com/realglobe-Inc/pon-task-pm2#readme",
+  "dependencies": {
+    "co": "^4.6.0",
+    "execcli": "^4.0.11"
+  },
+  "devDependencies": {
+    "ababel": "^2.0.1",
+    "ababel-es2015": "^2.0.1",
+    "amocha": "^2.0.0",
+    "ape-doc": "^2.0.4",
+    "ape-formatting": "^1.0.2",
+    "ape-releasing": "^4.0.4",
+    "ape-tasking": "^4.0.9",
+    "ape-tmpl": "^5.0.20",
+    "ape-updating": "^4.1.0",
+    "asleep": "^1.0.3",
+    "coz": "^6.0.20",
+    "injectmock": "^2.0.0",
+    "pon-context": "^2.0.1",
+    "pon-doc": "^2.0.1",
+    "sugos-travis": "^2.0.7"
+  },
+  "engines": {
+    "node": ">=6",
+    "npm": ">=4"
+  }
+}
