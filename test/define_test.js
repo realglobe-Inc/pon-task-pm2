@@ -29,7 +29,7 @@ describe('define', function () {
     )
     ok(task)
 
-    let { start, stop, restart, show, del } = task
+    let { start, stop, restart, show, del, logs } = task
 
     yield start(ctx)
     yield asleep(1000)
