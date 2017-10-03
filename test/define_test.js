@@ -8,20 +8,19 @@ const define = require('../lib/define.js')
 const ponContext = require('pon-context')
 const { ok } = require('assert')
 const asleep = require('asleep')
-const co = require('co')
 
 describe('define', function () {
   this.timeout(300000)
 
-  before(() => co(function * () {
+  before(async () => {
 
-  }))
+  })
 
-  after(() => co(function * () {
+  after(async () => {
 
-  }))
+  })
 
-  it('Define', () => co(function * () {
+  it('Define', async () => {
     let ctx = ponContext()
     let task = define(
       require.resolve('../misc/mocks/mock-script-01.js'),
@@ -31,13 +30,13 @@ describe('define', function () {
 
     let { start, stop, restart, show, del, logs } = task
 
-    yield start(ctx)
-    yield asleep(1000)
-    yield show(ctx)
-    yield restart(ctx)
-    yield stop(ctx)
-    yield del(ctx)
-  }))
+    await start(ctx)
+    await asleep(1000)
+    await show(ctx)
+    await restart(ctx)
+    await stop(ctx)
+    await del(ctx)
+  })
 })
 
 /* global describe, before, after, it */

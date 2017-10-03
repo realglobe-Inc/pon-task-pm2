@@ -1,6 +1,6 @@
 {
   "name": "pon-task-pm2",
-  "version": "1.0.2",
+  "version": "2.0.0",
   "description": "Pon task to use pm2",
   "main": "lib",
   "browser": "shim/browser",
@@ -23,18 +23,17 @@
   },
   "homepage": "https://github.com/realglobe-Inc/pon-task-pm2#readme",
   "dependencies": {
-    "co": "^4.6.0",
-    "execcli": "^4.0.11"
+    "execcli": "^5.0.1"
   },
   "devDependencies": {
     "ababel": "^2.0.1",
     "ababel-es2015": "^2.0.1",
-    "amocha": "^2.0.0",
+    "amocha": "^4.0.0",
     "ape-doc": "^2.0.4",
     "ape-formatting": "^1.0.2",
     "ape-releasing": "^4.0.4",
     "ape-tasking": "^4.0.9",
-    "ape-tmpl": "^5.0.20",
+    "ape-tmpl": "^6.0.2",
     "ape-updating": "^4.1.0",
     "asleep": "^1.0.3",
     "coz": "^6.0.20",
@@ -44,7 +43,7 @@
     "sugos-travis": "^2.0.7"
   },
   "engines": {
-    "node": ">=6",
-    "npm": ">=4"
+    "node": ">=8",
+    "npm": ">=5"
   }
 }
