@@ -27,7 +27,9 @@ describe('define', function () {
     )
     ok(task)
 
-    let {start, stop, restart, show, del, logs} = task
+    const {start, stop, restart, show, del, logs} = task
+
+    await del(ctx).catch((err) => null)
 
     await start(ctx)
     await asleep(1000)
@@ -53,6 +55,8 @@ describe('define', function () {
     ok(task)
 
     const {start, stop, restart, show, del, logs} = task
+
+    await del(ctx).catch((err) => null)
 
     await start(ctx)
     await asleep(1000)
