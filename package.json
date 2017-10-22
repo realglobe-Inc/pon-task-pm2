@@ -23,10 +23,10 @@
   },
   "homepage": "https://github.com/realglobe-Inc/pon-task-pm2#readme",
   "dependencies": {
-    "execcli": "^5.0.1"
+    "execcli": "^5.0.2"
   },
   "devDependencies": {
-    "ababel": "^2.0.1",
+    "ababel": "^2.0.3",
     "ababel-es2015": "^2.0.1",
     "amocha": "^4.0.0",
     "ape-doc": "^2.0.4",
@@ -37,6 +37,7 @@
     "ape-updating": "^4.1.0",
     "asleep": "^1.0.3",
     "coz": "^6.0.20",
+    "eslint": "^4.9.0",
     "injectmock": "^2.0.0",
     "pon-context": "^2.0.1",
     "pon-doc": "^2.0.1",
