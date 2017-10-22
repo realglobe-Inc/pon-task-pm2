@@ -58,12 +58,14 @@ describe('define', function () {
 
     await del(ctx).catch((err) => null)
 
-    await start(ctx)
-    await asleep(1000)
-    await show(ctx)
-    await restart(ctx)
-    await stop(ctx)
-    await del(ctx)
+    if (!process.env.CI) {
+      await start(ctx)
+      await asleep(1000)
+      await show(ctx)
+      await restart(ctx)
+      await stop(ctx)
+      await del(ctx)
+    }
 
     process.chdir(here)
   })
