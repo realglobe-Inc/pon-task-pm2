@@ -8,6 +8,8 @@ before_install:
 install:
 - npm install jsdoc pm2 -g
 - npm install
+before_script:
+- pm2 delete all
 script:
 - ./ci/build.js
 - ./ci/shim.js
