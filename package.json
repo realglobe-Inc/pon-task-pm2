@@ -23,7 +23,9 @@
   },
   "homepage": "https://github.com/realglobe-Inc/pon-task-pm2#readme",
   "dependencies": {
-    "execcli": "^5.0.2"
+    "asobj": "^2.0.1",
+    "execcli": "^5.0.2",
+    "writeout": "^2.2.1"
   },
   "devDependencies": {
     "ababel": "^2.0.3",
