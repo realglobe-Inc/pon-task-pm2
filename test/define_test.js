@@ -40,6 +40,10 @@ describe('define', function () {
   })
 
   it('Define with pon', async () => {
+    if (process.env.CI) {
+      return
+    }
+
     const here = process.cwd()
     const projectDir = `${__dirname}/../misc/mocks/mock-project01`
     process.chdir(projectDir)
@@ -58,14 +62,12 @@ describe('define', function () {
 
     await del(ctx).catch((err) => null)
 
-    if (!process.env.CI) {
-      await start(ctx)
-      await asleep(1000)
-      await show(ctx)
-      await restart(ctx)
-      await stop(ctx)
-      await del(ctx)
-    }
+    await start(ctx)
+    await asleep(1000)
+    await show(ctx)
+    await restart(ctx)
+    await stop(ctx)
+    await del(ctx)
 
     process.chdir(here)
   })
