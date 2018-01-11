@@ -34,6 +34,7 @@ describe('define', function () {
     await start(ctx)
     await asleep(1000)
     await show(ctx)
+    await start(ctx)
     await restart(ctx)
     await stop(ctx)
     await del(ctx)
