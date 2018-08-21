@@ -37,6 +37,7 @@ describe('define', function () {
     await start(ctx)
     await restart(ctx)
     await stop(ctx)
+    await stop(ctx) // Does not throw even if already stopped
     await del(ctx)
   })
 
