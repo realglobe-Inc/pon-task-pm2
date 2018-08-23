@@ -1,6 +1,6 @@
 {
   "name": "pon-task-pm2",
-  "version": "2.2.3",
+  "version": "2.2.4",
   "description": "Pon task to use pm2",
   "main": "lib",
   "browser": "shim/browser",
