@@ -114,6 +114,7 @@ Define task
 | ---- | --- | ----------- |
 | filename | string |  Script file path |
 | options | Object |  Optional settings |
+| options.waitReady | boolean |  Wait to ready ( https://github.com/Unitech/pm2/tree/master/examples/wait-ready ) |
 
 
 
