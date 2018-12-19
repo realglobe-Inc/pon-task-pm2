@@ -3,4 +3,4 @@
 
 setInterval(() => {
   console.log('hoge')
-})
+}, 100)
